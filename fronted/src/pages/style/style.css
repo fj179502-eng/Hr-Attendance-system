@@ -1,0 +1,263 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 120px 120px;
+}
+
+.home {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0, 0.2)0px 4px 8px;
+    border: 2px solid orange;
+}
+
+.title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    color: rgb(14, 85, 166);
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.form-group input,
+select {
+    width: 100%;
+    padding: 7px;
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 7px;
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: orange;
+    width: 100%;
+    height: 45px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+}
+
+.btn1 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+    border: none;
+}
+
+
+.btn2 {
+    text-decoration: none;
+    background-color: rgb(14, 85, 166);
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s;
+    border: none;
+}
+
+.btn:hover,
+.btn2:hover {
+    background-color: black;
+    transform: translateY(-2px);
+    color: white;
+}
+
+.sidebar {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 220px;
+    box-shadow: rgb(0, 0, 0, 0.2)0px 4px 8px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    overflow-y: auto;
+    overflow-x: auto;
+    z-index: 1100;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-menu {
+    padding: 7px;
+
+}
+
+@media(max-width:768px) {
+    .sidebar.closed {
+        transform: translateX(-100%);
+    }
+}
+
+.sidebar.Open {
+    transform: translateX(0);
+}
+
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 1050;
+    display: none;
+}
+
+@media(max-width:768px) {
+    .sidebar-overlay {
+        display: block;
+    }
+}
+
+.menu-item {
+    padding: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 12px;
+    transition: all 0.3s;
+}
+
+.icon {
+    font-size: 25px;
+}
+
+.dropdown-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 12px;
+    transition: all 0.3s;
+    display: block;
+}
+
+.menu-item a:hover,
+.dropdown-item a:hover {
+    background-color: #007bff;
+    transform: translateY(-3px);
+}
+
+.home1 {
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0, 0.2)0px 4px 8px;
+}
+
+.title1 {
+    text-align: center;
+    border-bottom: 1px solid;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.form-group1 {
+    margin-bottom: 10px;
+}
+
+.form-group1 label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.form-group1 input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(100, 93, 93);
+    border-radius: 5px;
+}
+
+.btn3 {
+    text-decoration: none;
+    background-color: rgb(30, 134, 30);
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+}
+
+.btn4 {
+    text-decoration: none;
+    background-color: rgb(216, 35, 35);
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+}
+
+.home2 {
+    background-color: white;
+    padding: 30px;
+
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0, 0.2)0px 4px 8px;
+}
+
+.forms {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
